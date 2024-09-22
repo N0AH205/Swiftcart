@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - E-Commerce</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script scr="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Swiftcart</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <div class="categories-container">
+                <div class="category-item"><a href="#">Electronics</a></div>
+                <div class="category-item"><a href="#">Fashion</a></div>
+                <div class="category-item"><a href="#">Home & Kitchen</a></div>
+                <div class="category-item"><a href="#">Sports</a></div>
+                <div class="category-item"><a href="#">Books</a></div>
+            </div>
+        </aside>
+    </div>
+
+    <main class="content">
+        <div class="products-container">
+            <div class="featured-products">
+                <h1 class="featured-h1">Featured Products</h1>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="product1.jpg" alt="Product 1">
+                        <h3>Product 1</h3>
+                        <p>$19.99</p>
+                        <button onclick="addToCart('Product 1', 19.99, 'product1.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product2.jpg" alt="Product 2">
+                        <h3>Product 2</h3>
+                        <p>$29.99</p>
+                        <button onclick="addToCart('Product 2', 29.99, 'product2.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="product3.jpg" alt="Product 3">
+                        <h3>Product 3</h3>
+                        <p>$39.99</p>
+                        <button onclick="addToCart('Product 3', 39.99, 'product3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="best-deals">
+                <h1 class="best-h1">Best Deals</h1>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="deal1.jpg" alt="Best Deal 1">
+                        <h3>Best Deal 1</h3>
+                        <p>$14.99</p>
+                        <button onclick="addToCart('Best Deal 1', 14.99, 'deal1.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="deal2.jpg" alt="Best Deal 2">
+                        <h3>Best Deal 2</h3>
+                        <p>$24.99</p>
+                        <button onclick="addToCart('Best Deal 2', 24.99, 'deal2.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="deal3.jpg" alt="Best Deal 3">
+                        <h3>Best Deal 3</h3>
+                        <p>$34.99</p>
+                        <button onclick="addToCart('Best Deal 3', 34.99, 'deal3.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Swiftcart - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
